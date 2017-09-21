@@ -1,0 +1,34 @@
+import java.util.Scanner
+
+public class Opdracht11 {
+
+
+    public static void main(String []args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        int: tien,vijf,een,vijftig,twintig,tien,vijf2,bedrag;
+
+        System.out.println("Typ een bedrag in om het in wisselgeld uit te rekenen");
+
+        int bedrag = scanner.nextInt();
+
+
+        if (bedrag = > 10000 ) {
+
+        }
+
+
+        System.out.println("100 euro biljet(ten): ");
+        System.out.println("50 euro biljet(ten): ");
+        System.out.println("20 euro biljet(ten): ");
+        System.out.println("10 euro biljet(ten): ");
+        System.out.println("5 euro biljet(ten): ");
+        System.out.println("2 euro: ");
+        System.out.println("1 euro: ");
+        System.out.println("50 centen: ");
+        System.out.println("20 centen: ");
+        System.out.println("10 centen: ");
+        System.out.println("5 centen: ");
+    }
+}
