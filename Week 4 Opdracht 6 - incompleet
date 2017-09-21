@@ -1,0 +1,33 @@
+//Moet gedaan worden via if statements, maar wil het op de makkelijkere manier doen
+
+import java.util.Scanner;
+
+public class opdracht6 {
+
+
+    public static void main(String []args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        char hekje = '#';
+        int counter = 0;
+
+
+        System.out.println("Hoeveel regels groot moet de piramide worden?");
+        int hoeveelheid = scanner.nextInt();
+
+        int uitkomst = hekje * hoeveelheid;
+
+        while (counter < hoeveelheid) {
+            System.out.println(uitkomst + hekje);
+
+
+            counter++;
+        }
+
+
+
+    }
+}
+
+
