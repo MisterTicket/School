@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class opdracht3 {
+
+
+    public static void main(String []args) {
+
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Wat is de prijs?");
+        double prijs = scanner.nextInt();
+
+        double korting5 = prijs / 100 * 95;
+        double korting10 = prijs / 100 * 90;
+        double korting20 = prijs / 100 * 80;
+
+        if (prijs < 100) {
+            System.out.println("Kortingsprijs = " + korting5);
+        }
+        if (prijs > 100 && prijs < 200) {
+            System.out.println("Prijs met korting = " + korting10);
+        }
+        if (prijs > 200) {
+            System.out.println("Prijs met korting = " + korting20);
+        }
+
+    }
+
+    }
+
