@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class opdracht7 {
+
+
+        public static void main(String []args) {
+
+            Scanner scanner = new Scanner(System.in);
+
+
+            int die;
+            int die2;
+            int die3;
+
+            die = (int)(Math.random()*6) + 1;
+            die2 = (int)(Math.random()*6) + 1;
+            die3 = (int)(Math.random()*6) + 1;
+
+            System.out.printf("Hoe vaak wil je de dobbelsteen gooien?");
+
+            int hoeveel = scanner.nextInt();
+
+            if (hoeveel == 1) {
+                System.out.println("Gooi 1: " + die);
+            }
+            if (hoeveel == 2) {
+                System.out.println("Gooi 1: " + die);
+                System.out.println("Gooi 2: " + die2);
+            }
+            if (hoeveel == 3) {
+                System.out.println("Gooi 1: " + die);
+                System.out.println("Gooi 2: " + die2);
+                System.out.println("Gooi 3: " + die3);
+            }
+
+
+            }
+
+
+        }
