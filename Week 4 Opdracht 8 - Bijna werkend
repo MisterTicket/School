@@ -1,0 +1,67 @@
+import java.util.Scanner;
+
+public class opdracht8 {
+
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+
+        int die;
+        die = (int)(Math.random()*6) + 1;
+
+        //Optellen van de resultaten
+        int enen = 0;
+        int tweeen = 0;
+        int drieen = 0;
+        int vieren = 0;
+        int vijfen = 0;
+        int zessen = 0;
+        int counter = 0;
+
+
+        int i = scanner.nextInt();
+        while (counter < i) {
+            System.out.println("Rolling the die. Your number is: " + die);
+
+            if (die == 1) {
+                enen = enen + 1;
+            }
+            if (die == 2) {
+                tweeen = tweeen + 1;
+            }
+            if (die == 3) {
+                drieen = drieen + 1;
+            }
+            if (die == 4) {
+                vieren = vieren + 1;
+            }
+            if (die == 5) {
+                vijfen = vijfen + 1;
+            }
+            if (die == 6) {
+                zessen = zessen + 1;
+            }
+
+
+
+            counter++;
+        }
+        //Dit is na de loop
+        System.out.println("Je score is:");
+        System.out.println("Enen: " + enen);
+        System.out.println("Tweeen " + tweeen);
+        System.out.println("Drieen " + drieen);
+        System.out.println("Vieren " + vieren);
+        System.out.println("Vijfen " + vijfen);
+        System.out.println("Zessen " + zessen);
+
+
+        }
+
+
+        }
+
+
+
