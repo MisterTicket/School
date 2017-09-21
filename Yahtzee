@@ -1,0 +1,156 @@
+import java.util.Scanner;
+
+public class Yahtzee {
+
+    public static void main(String[] args) {
+
+        int die1;
+        int die2;
+        int die3;
+        int die4;
+        int die5;
+
+
+        int enen = 0;
+        int tweeen = 0;
+        int drieen = 0;
+        int vieren = 0;
+        int vijfen = 0;
+        int zessen = 0;
+        int counter = 0;
+
+        while (counter < 10) {
+
+            System.out.println("De dobbelstenen worden gegooid!");
+
+            die1 = (int) (Math.random() * 6) + 1;
+            die2 = (int) (Math.random() * 6) + 1;
+            die3 = (int) (Math.random() * 6) + 1;
+            die4 = (int) (Math.random() * 6) + 1;
+            die5 = (int) (Math.random() * 6) + 1;
+
+            System.out.println("De resultaten zijn: " + die1 + " " + die2 + " " + die3 + " " + die4 + " " + die5);
+
+
+            //Dobbelsteen 1
+            if (die1 == 1) {
+                enen = enen + 1;
+            }
+            if (die1 == 2) {
+                tweeen = tweeen + 1;
+            }
+            if (die1 == 3) {
+                drieen = drieen + 1;
+            }
+            if (die1 == 4) {
+                vieren = vieren + 1;
+            }
+            if (die1 == 5) {
+                vijfen = vijfen + 1;
+            }
+            if (die1 == 6) {
+                zessen = zessen + 1;
+            }
+
+            //Dobbelsteen 2
+            if (die2 == 1) {
+                enen = enen + 1;
+            }
+            if (die2 == 2) {
+                tweeen = tweeen + 1;
+            }
+            if (die2 == 3) {
+                drieen = drieen + 1;
+            }
+            if (die2 == 4) {
+                vieren = vieren + 1;
+            }
+            if (die2 == 5) {
+                vijfen = vijfen + 1;
+            }
+            if (die2 == 6) {
+                zessen = zessen + 1;
+            }
+
+
+            //Dobbelsteen 3
+
+            if (die3 == 1) {
+                enen = enen + 1;
+            }
+            if (die3 == 2) {
+                tweeen = tweeen + 1;
+            }
+            if (die3 == 3) {
+                drieen = drieen + 1;
+            }
+            if (die3 == 4) {
+                vieren = vieren + 1;
+            }
+            if (die3 == 5) {
+                vijfen = vijfen + 1;
+            }
+            if (die3 == 6) {
+                zessen = zessen + 1;
+            }
+
+            //Dobbelsteen 4
+
+            if (die4 == 1) {
+                enen = enen + 1;
+            }
+            if (die4 == 2) {
+                tweeen = tweeen + 1;
+            }
+            if (die4 == 3) {
+                drieen = drieen + 1;
+            }
+            if (die4 == 4) {
+                vieren = vieren + 1;
+            }
+            if (die4 == 5) {
+                vijfen = vijfen + 1;
+            }
+            if (die4 == 6) {
+                zessen = zessen + 1;
+            }
+
+
+            //Dobbelsteen 5
+
+            if (die5 == 1) {
+                enen = enen + 1;
+            }
+            if (die5 == 2) {
+                tweeen = tweeen + 1;
+            }
+            if (die5 == 3) {
+                drieen = drieen + 1;
+            }
+            if (die5 == 4) {
+                vieren = vieren + 1;
+            }
+            if (die5 == 5) {
+                vijfen = vijfen + 1;
+            }
+            if (die5 == 6) {
+                zessen = zessen + 1;
+            }
+
+            counter++;
+        }
+
+        System.out.println("Je score is:");
+        System.out.println("Enen: " + enen);
+        System.out.println("Tweeen " + tweeen);
+        System.out.println("Drieen " + drieen);
+        System.out.println("Vieren " + vieren);
+        System.out.println("Vijfen " + vijfen);
+        System.out.println("Zessen " + zessen);
+
+
+
+    }
+
+
+}
