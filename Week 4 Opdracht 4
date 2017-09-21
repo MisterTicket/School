@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class opdracht4 {
+
+
+    public static void main(String []args) {
+
+
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Wat is uw postcode?");
+
+        double postcode = scanner.nextDouble();
+
+        if (postcode < 1000) {
+            System.out.println("Deze postcode bestaat niet. (te laag)");
+        }
+        if (postcode > 9999) {
+            System.out.println("Deze postcode bestaat niet (te hoog).");
+        }
+        if (postcode > 1000 && postcode < 9999) {
+            System.out.println("Geldige postcode opgegeven.");
+        }
+
+
+
+
+    }
+
+}
+
