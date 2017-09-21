@@ -1,0 +1,43 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class Opdracht13 {
+
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Voer ondergrens in");
+
+        int min = scanner.nextInt();
+
+        System.out.println("Voer bovengrens in");
+
+        int max = scanner.nextInt();
+
+        Random minmax = new Random():
+        int antwoord = minmax.nextInt(max - min + 1) + min;
+
+        Random minmax2 = new Random();
+        int antwoord2 = minmax2.nextInt(max) + min;
+
+        if (min > max) {
+            System.out.println("voer een geldig getal in.");
+        } else {
+            System.out.println("Wat is de uitkmost van " + antwoord + "+" + antwoord2 + "?");
+        }
+
+        int eindantwoord = scanner.nextInt();
+
+        int totaal = antwoord + antwoord2;
+
+        if (eindantwoord == antwoord + antwoord2) {
+            System.out.println("Goed gedaan!");
+        } else {
+            System.out.println("Verkeerd. Het antwoord is: " + totaal);
+        }
+
+
+    }
+}
