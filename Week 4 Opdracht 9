@@ -27,12 +27,13 @@ public class opdracht9 {
         double obol = 4 * Math.PI * i;
 
         //radius van een bol
-        double bol =
+        double bol1 = radius * radius * radius;
+        double bol = 4/3 * Math.PI * bol1;
 
 
         System.out.println("De omtrek van een cirkel is: " + omtrek);
         System.out.println("De oppervlakte van de cirkel is: " + oppervlakte);
         System.out.println("De oppervlakte van een bol is: " + obol);
-        System.out.println("De radius van een bol is: TBA");
+        System.out.println("De radius van een bol is: " + bol);
     }
 }
