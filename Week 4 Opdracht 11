@@ -30,22 +30,22 @@ public class opdracht11 {
         if (i == 2) {
 
             while (counter < 13) {
-                System.out.print("+--+--+--+--+--+--+--+--+\n" +
-                        "|  |  |  |  |  |  |  |  |\n");
+                System.out.print("+--+--+--+--+--+--+--+--+--+--+--+--+\n" +
+                        "|  |  |  |  |  |  |  |  |  |  |  |  |\n");
 
                 counter++;
             }
-            System.out.println("+--+--+--+--+--+--+--+--+");
+            System.out.println("+--+--+--+--+--+--+--+--+--+--+--+--+");
         }
         if (i == 3) {
 
             while (counter < 19) {
-                System.out.print("+--+--+--+--+--+--+--+--+\n" +
-                        "|  |  |  |  |  |  |  |  |\n");
+                System.out.print("+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+\n" +
+                        "|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |\n");
 
                 counter++;
             }
-            System.out.println("+--+--+--+--+--+--+--+--+");
+            System.out.println("+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+");
         }
         else {
             System.out.println("Please choose between 1 - 3.");
