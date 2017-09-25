@@ -8,8 +8,6 @@ public class opdracht8 {
         Scanner scanner = new Scanner(System.in);
 
 
-        int die;
-        die = (int)(Math.random()*6) + 1;
 
         //Optellen van de resultaten
         int enen = 0;
@@ -21,8 +19,12 @@ public class opdracht8 {
         int counter = 0;
 
 
+
+        System.out.println("Hoe vaak wil je de dobbelsteen gooien? Voer een nummer in.");
         int i = scanner.nextInt();
         while (counter < i) {
+            int die;
+            die = (int)(Math.random()*6) + 1;
             System.out.println("Rolling the die. Your number is: " + die);
 
             if (die == 1) {
@@ -57,11 +59,12 @@ public class opdracht8 {
         System.out.println("Vijfen " + vijfen);
         System.out.println("Zessen " + zessen);
 
+        int totaal = enen + tweeen + drieen + vieren + vijfen + zessen;
+        double gemiddelde = totaal / 6;
 
-        }
+        System.out.println(gemiddelde);
+
+    }
 
 
-        }
-
-
-
+}
