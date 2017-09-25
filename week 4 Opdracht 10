@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class opdracht10 {
+
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        int counter = 0;
+        char hekje = '#';
+
+
+        System.out.println("Hoe hoog moet de piramide worden?");
+
+        int i = scanner.nextInt();
+
+
+
+        while (counter < i) {
+            System.out.println(counter * hekje);
+
+            counter++;
+        }
+
+
+
+    }
+}
