@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class opdracht9 {
+
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+
+        System.out.println("Voer de radius in: ");
+
+        double i = scanner.nextInt();
+
+
+        //comtrek cirkel
+        double omtrek = Math.PI * i;
+
+        //oppervlakte cirkel
+
+        double radius = i / 2;
+        double cirkel = radius * radius;
+        double oppervlakte = cirkel + Math.PI;
+
+
+        //oppervlakte bol
+        double obol = 4 * Math.PI * i;
+
+        //radius van een bol
+        double bol =
+
+
+        System.out.println("De omtrek van een cirkel is: " + omtrek);
+        System.out.println("De oppervlakte van de cirkel is: " + oppervlakte);
+        System.out.println("De oppervlakte van een bol is: " + obol);
+        System.out.println("De radius van een bol is: TBA");
+    }
+}
