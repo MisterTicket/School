@@ -1,0 +1,95 @@
+import java.util.Scanner;
+
+public class opdracht6 {
+
+
+    public static void main(String []args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Hoeveel regels groot moet de piramide worden?");
+        int hoeveelheid = scanner.nextInt();
+
+        if (hoeveelheid == 1) {
+            System.out.println("#");
+        }
+        if (hoeveelheid == 2) {
+            System.out.println("#");
+            System.out.println("##");
+        }
+        if (hoeveelheid == 3) {
+            System.out.println("#");
+            System.out.println("##");
+            System.out.println("###");
+        }
+        if (hoeveelheid == 4) {
+            System.out.println("#");
+            System.out.println("##");
+            System.out.println("###");
+            System.out.println("####");
+        }
+        if (hoeveelheid == 5) {
+            System.out.println("#");
+            System.out.println("##");
+            System.out.println("###");
+            System.out.println("####");
+            System.out.println("#####");
+        }
+        if (hoeveelheid == 6) {
+            System.out.println("#");
+            System.out.println("##");
+            System.out.println("###");
+            System.out.println("####");
+            System.out.println("#####");
+            System.out.println("######");
+        }
+        if (hoeveelheid == 7) {
+            System.out.println("#");
+            System.out.println("##");
+            System.out.println("###");
+            System.out.println("####");
+            System.out.println("#####");
+            System.out.println("######");
+            System.out.println("#######");
+        }
+        if (hoeveelheid == 8) {
+            System.out.println("#");
+            System.out.println("##");
+            System.out.println("###");
+            System.out.println("####");
+            System.out.println("#####");
+            System.out.println("######");
+            System.out.println("#######");
+            System.out.println("########");
+        }
+        if (hoeveelheid == 9) {
+            System.out.println("#");
+            System.out.println("##");
+            System.out.println("###");
+            System.out.println("####");
+            System.out.println("#####");
+            System.out.println("######");
+            System.out.println("#######");
+            System.out.println("########");
+            System.out.println("#########");
+        }
+        if (hoeveelheid == 10) {
+            System.out.println("#");
+            System.out.println("##");
+            System.out.println("###");
+            System.out.println("####");
+            System.out.println("#####");
+            System.out.println("######");
+            System.out.println("#######");
+            System.out.println("########");
+            System.out.println("#########");
+            System.out.println("##########");
+        } else {
+            System.out.println("Max 1 tot 10.");
+        }
+
+
+    }
+}
+
+
