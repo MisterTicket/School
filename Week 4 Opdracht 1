@@ -1,0 +1,12 @@
+public class opdracht1 {
+
+
+    public static void main(String []args) {
+
+
+        for (int counter = 1; counter < 101; counter++) {
+            System.out.println(1 * counter);
+        }
+
+    }
+}
