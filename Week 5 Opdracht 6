@@ -1,0 +1,30 @@
+public class opdracht6 {
+
+    public static void main(String[] args) {
+
+        int[] numbers = {4, 2, 6, 1};
+
+        int hoogste = Integer.MAX_VALUE;
+
+        for (int i = 0; i <numbers.length; i++) {
+            if (numbers[i] < hoogste) {
+                hoogste = numbers[i];
+            }
+        }
+        System.out.println("Getal wat we kwijt raken: " +hoogste);
+
+
+        int total = 0;
+        for (int element : numbers)
+        {
+            total = total + element;
+        }
+        int totaal = 0;
+        if (numbers.length > 0) { totaal = total - numbers[3]; }
+
+        System.out.println("De som van alle arrays minus de laagste: " +totaal);
+
+
+    }
+
+}
