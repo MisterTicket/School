@@ -1,0 +1,28 @@
+public class opdracht3 {
+
+
+    public static void main(String[] args) {
+
+        int[] values = {4, 2, 6, 1};
+
+        int temp = values[0];
+
+        values[0] = values[values.length-1];
+
+        values[values.length-1] = temp;
+
+        for (int value: values) {
+
+            System.out.println(value);
+        }
+
+
+    }
+
+
+
+
+
+
+}
+
