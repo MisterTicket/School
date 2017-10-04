@@ -1,0 +1,28 @@
+public class opdracht5 {
+
+
+    public static void main(String[] args) {
+
+        double[] values = {4.3, 2.7, 10.5, 1.1};
+
+
+        double total = 0;
+        for (double element : values)
+        {
+            total = total + element;
+        }
+
+        double average = 0;
+        if (values.length > 0) { average = total / values.length; }
+
+
+        System.out.println(average);
+
+
+    }
+
+
+
+
+}
+
