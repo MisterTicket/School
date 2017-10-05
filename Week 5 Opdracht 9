@@ -1,0 +1,15 @@
+public class opdracht9 {
+
+    public static void main(String[] args) {
+
+        int[] numbers = {1, 2, 3, 4, 4};
+
+        for (int i = 1; i <numbers.length; i++) {
+            if (numbers[i-1]==numbers[i]) {
+                System.out.println("Duplicate nummer is: " + numbers[i]);
+            } else
+                System.out.println("Geen duplicaten gevonden tho");
+        }
+    }
+}
+
