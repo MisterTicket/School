@@ -1,0 +1,17 @@
+public class opdracht10 {
+
+    public static void main(String[] args) {
+
+        int[] array1 = {1,4,7,9};
+        int[] array2 = {0,2,3,5,6,8};
+
+        int[] arraymerge = new int[array1.length + array2.length];
+
+        System.arraycopy(array1, 0, arraymerge, 0, array1.length);
+        System.arraycopy(array2, 0, arraymerge, array1.length, array2.length);
+
+        for (int i = 0; i <arraymerge.length; i++) {
+            System.out.println(arraymerge);
+        }
+    }
+}
