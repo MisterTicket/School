@@ -1,0 +1,30 @@
+import  java.util.Scanner;
+
+public class opdracht4 {
+
+    public static void main(String[] args) {
+        new opdracht4().run();
+
+    }
+
+    public void run() {
+
+        getRandomNumberBetweenBounds(4,4);
+    }
+
+    public void getRandomNumberBetweenBounds(int lowerBound, int upperBound) {
+
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Voer een laag nummer in: ");
+        lowerBound = scanner.nextInt();
+        System.out.println("Voer een hoog nummer in: ");
+        upperBound = scanner.nextInt();
+
+        int die = 0;
+        die = (int)(Math.random()* (upperBound - lowerBound)) + lowerBound;
+
+        System.out.println(die);
+    }
+}
