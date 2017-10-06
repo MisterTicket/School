@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class opdracht3 {
+
+
+    public static void main(String[] args) {
+        new opdracht3().run();
+
+    }
+
+    public void run() {
+
+        allTheSame(4, 4, 4);
+    }
+
+
+    public void allTheSame(int x, int y, int z) {
+
+
+        int xyz = x + y + z;
+
+        Scanner scanner = new Scanner(System.in);
+        int i = scanner.nextInt();
+        boolean check = i == xyz;
+
+        if (i == xyz) {
+            System.out.println(check);
+        } else {
+            System.out.println(check);
+        }
+
+    }
+
+
+}
