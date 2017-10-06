@@ -9,18 +9,18 @@ public class opdracht4 {
 
     public void run() {
 
-        getRandomNumberBetweenBounds(4,4);
+        getRandomNumberBetweenBounds();
     }
 
-    public void getRandomNumberBetweenBounds(int lowerBound, int upperBound) {
+    public void getRandomNumberBetweenBounds() {
 
 
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Voer een laag nummer in: ");
-        lowerBound = scanner.nextInt();
+        int lowerBound = scanner.nextInt();
         System.out.println("Voer een hoog nummer in: ");
-        upperBound = scanner.nextInt();
+        int upperBound = scanner.nextInt();
 
         int die = 0;
         die = (int)(Math.random()* (upperBound - lowerBound)) + lowerBound;
