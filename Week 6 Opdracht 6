@@ -1,8 +1,8 @@
-public class opdracht5 {
+public class opdracht6 {
 
 
     public static void main(String[] args) {
-        new opdracht5().run();
+        new opdracht6().run();
     }
 
     public void run() {
