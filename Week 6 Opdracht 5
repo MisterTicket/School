@@ -1,0 +1,30 @@
+
+public class opdracht5 {
+
+
+    public static void main(String[] args) {
+        new opdracht5().run();
+    }
+
+    public void run() {
+
+        palindrome();
+    }
+
+
+
+    public void palindrome() {
+
+        String s = "Hello";
+        char one = s.charAt(0);
+        char two = s.charAt(1);
+        char three = s.charAt(2);
+        char four = s.charAt(3);
+        char five = s.charAt(4);
+
+        System.out.println(s);
+        System.out.println(five + four + three + two + one);
+
+
+    }
+}
