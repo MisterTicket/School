@@ -1,0 +1,28 @@
+import  java.util.Scanner;
+
+public class opdracht8 {
+
+    public static void main(String[] args) {
+
+        new opdracht8().run();
+    }
+
+    public void run() {
+        palindroom();
+    }
+
+    public void palindroom() {
+
+        Scanner scanner = new Scanner(System.in);
+        String s = scanner.next();
+
+        String reverse = new StringBuffer(s).reverse().toString();
+
+        if (s.equals(reverse)) {
+            System.out.println(s + " is een palindroom");
+        } else {
+            System.out.printf(s + " is geen palindroom");
+
+        }
+    }
+}
