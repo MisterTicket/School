@@ -1,0 +1,43 @@
+import  java.util.Scanner;
+
+public class opdracht9 {
+
+    public static void main(String[] args) {
+
+        new opdracht9().run();
+    }
+
+    public void run() {
+
+        betweenbounds();
+    }
+
+    public void betweenbounds() {
+
+        double lower = 0;
+        double higher = 0;
+        double gokje = 0;
+
+
+        Scanner scanner = new Scanner(System.in);
+
+
+        while (true) {
+            higher = (int) (Math.random() * 10) + 1;
+            gokje = (int) (Math.random() * higher) + 1;
+            System.out.println("Voer dit getal in: " + gokje);
+            Double s = scanner.nextDouble();
+            if (s == gokje) {
+                System.out.println("Top! Helemaal goed!");
+                break;
+            } else if (s < gokje) {
+                System.out.printf("Incorrect! Voer een nummer in boven " +gokje );
+            } else if (s > gokje) {
+                System.out.println("Incorrect! Voer een lager nummer in");
+            } else {
+                System.out.println("Helaas, je IQ is vast net zo laag. Probeer het nog een keer.");
+            }
+        }
+    }
+}
+
