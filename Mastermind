@@ -1,0 +1,66 @@
+import java.util.Scanner;
+
+
+//genereer de vier te raden kleuren (of 1 t/m8) en bewaar
+
+
+
+//--------Herhaal maximaal 12 keer--------//
+
+//Vraag om gokrij van speler en bewaar dat
+
+//Controleer gokrij ten opzichte van kleurrij
+
+//Geef uitslag
+
+// Arays.toString(_stringnaam_);
+
+//public void run() {
+
+//Genereer oplossing();
+//Herhaal tot einde spel(); {
+//  Vraag oplossing();
+//  Geef feedback();
+//Geef uitslag();
+
+
+public class mastermind {
+
+    public static void main(String[] args){
+
+
+        int counter = 0;
+        while (counter < 12) {
+            int een = (int) (Math.random() * 8) + 1;
+            int twee = (int) (Math.random() * 8) + 1;
+            int drie = (int) (Math.random() * 8) + 1;
+            int vier = (int) (Math.random() * 8) + 1;
+
+            int[] vraag = {een, twee, drie, vier};
+            int[] antwoord = new int[];
+
+            System.out.println("De computer heeft de getallen klaar");
+            System.out.println("Geef 4 nummers tussen de 1 - 8 om het antwoord te raden");
+            System.out.println("Geef 1 cijfer per regel");
+
+            Scanner scan = new Scanner(System.in);
+
+            int antwoord1 = scan.nextInt();
+            int antwoord2 = scan.nextInt();
+            int antwoord3 = scan.nextInt();
+            int antwoord4 = scan.nextInt();
+
+            if (antwoord1 = een){
+
+            }
+
+
+            counter++;
+        }
+
+
+
+    }
+
+
+}
