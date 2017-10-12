@@ -1,0 +1,74 @@
+//Keuzemenu
+
+import java.util.Scanner;
+
+public class opdracht2 {
+
+    public static void main(String[] args) {
+        new opdracht2().run();
+    }
+
+    public void run() {
+
+        menu();
+    }
+
+    public void menu() {
+
+
+        boolean i = false;
+        while (!i) {
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("****************");
+            System.out.println("Tekeningen!");
+            System.out.println("****************");
+            System.out.println("1) Teken een huis");
+            System.out.println("2) Teken een halve piramide");
+            System.out.println("3) Teken een volledige piramide");
+            System.out.println("0) Exit");
+            System.out.println("Maak je keuze: ");
+            int menukeuze = scanner.nextInt();
+
+            if (menukeuze == 1) {
+                huis();
+            } else if (menukeuze == 2) {
+                halvepiramide();
+            } else if (menukeuze == 3) {
+                helepiramide();
+            } else if (menukeuze == 0) {
+                System.out.println("Dikke doei!");
+                i = true;
+            } else {
+                System.out.println("Voer een geldig nummer in");
+            }
+        }
+
+    }
+
+    public void huis(){
+        System.out.println("   +");
+        System.out.println("  + +");
+        System.out.println(" +   +");
+        System.out.println("+-----+");
+        System.out.println("|     |");
+        System.out.println("|  _  |");
+        System.out.println("| | | |");
+        System.out.println("| | | |");
+        System.out.println("|_+_+_|");
+    }
+
+    public void halvepiramide(){
+        System.out.println("+");
+        System.out.println("++");
+        System.out.println("+++");
+        System.out.println("++++");
+        System.out.println("+++++");
+        System.out.println("++++++");
+    }
+
+    public void helepiramide(){
+        System.out.println("  +  ");
+        System.out.println(" +++ ");
+        System.out.println("+++++");
+    }
+}
