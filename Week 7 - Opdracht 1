@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class opdracht1 {
+
+    public static void main(String[] args) {new opdracht1().run();}
+
+    public void run() {
+
+        belasting();
+    }
+
+    public void belasting() {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Voer je jaarloon in om te berekenen wat je moet betalen: ");
+        int loon = scanner.nextInt();
+
+        if (loon < 19982) {
+            double schijf1 = (loon / 100) * 36.55;
+            System.out.println(schijf1);
+        }else if (loon>19982 && loon <33791){
+
+            double schijf2 = (loon - 19982) / 100 * 40.80;
+            double schijf1 = (19982 / 100) * 36.55;
+        }else if (loon>33791 && loon < 67072){
+            double schijf3 = (loon - 33792) / 100 * 40.80;
+            
+        }
+        double schijf2 = ((loon - schijf1) / 100 * 40.80);
+        double schijf3 = ((loon - schijf1)-schijf2) / 100 * 40.80;
+
+    }
+}
