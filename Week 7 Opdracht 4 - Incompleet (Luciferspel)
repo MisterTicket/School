@@ -1,0 +1,74 @@
+import java.util.Scanner;
+import java.util.ArrayList;
+
+public class opdracht4 {
+
+    public static void main(String[] args) {
+        new opdracht4().run();
+    }
+
+    public void run() {
+
+        lucifer();
+    }
+
+    public void lucifer() {
+
+        int player = 1;
+        char[] lucifers = {'|', '|', '|', '|', '|', '|', '|', '|', '|', '|', '|', '|', '|', '|', '|', '|', '|', '|', '|', '|', '|', '|', '|', '|'};
+        Scanner scanner = new Scanner(System.in);
+
+
+
+        int totaal = 0;
+        boolean i = false;
+        while (!i) {
+            if (lucifers.length == 0) {
+                i = true;
+                System.out.println("Gefeliciteerd! Speler X heeft gewonnen!" + lucifers.length);
+            } else {
+
+                if (player == 1) {
+                    System.out.println(lucifers);
+                    System.out.println(lucifers.length);
+                    System.out.println("Speler 1, hoeveel lucifers haal je weg (1, 2 of 3)?");
+                    int invoer = scanner.nextInt();
+                    if (invoer == 1) {
+                        for (int j = 24; j <lucifers.length -1; j--){
+                            char temp = lucifers[0];
+                            lucifers[lucifers.length-1] = temp;
+                        }
+                    } else if (invoer == 2) {
+                        char temp = lucifers[0];
+                        lucifers[lucifers.length - 2] = temp;
+                    } else if (invoer == 3) {
+                        char temp = lucifers[0];
+                        lucifers[lucifers.length - 3] = temp;
+                    } else {
+                        System.out.println("Kiezen tussen 1 - 3 dronken droppie. Nu is je beurt voorbij");
+                    }
+                    player = 2;
+                } else {
+                    System.out.println(lucifers);
+                    System.out.println(lucifers.length);
+                    System.out.println("Speler 2, hoeveel lucifers haal je weg (1, 2 of 3)?");
+                    int invoer = scanner.nextInt();
+                    if (invoer == 1) {
+                        char temp = lucifers[0];
+                        lucifers[lucifers.length - 1] = temp;
+                    } else if (invoer == 2) {
+                        char temp = lucifers[0];
+                        lucifers[lucifers.length - 2] = temp;
+                    } else if (invoer == 3) {
+                        char temp = lucifers[0];
+                        lucifers[lucifers.length - 3] = temp;
+                    } else {
+                        System.out.println("Kiezen tussen 1 - 3 dronken droppie. Nu is je beurt voorbij");
+
+                        player = 1;
+                    }
+                }
+            }
+        }
+    }
+}
