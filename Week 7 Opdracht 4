@@ -1,112 +1,71 @@
 import java.util.Scanner;
-import java.lang.String;
+import java.util.ArrayList;
 
-
-
-public class tictac {
-
+public class opdracht4 {
 
     public static void main(String[] args) {
-        new tictac().run();
+        new opdracht4().run();
     }
-
-
 
     public void run() {
 
-        tictactoes();
+        lucifer();
     }
 
-    public void tictactoes() {
+    public void lucifer() {
 
-        Scanner inputx = new Scanner(System.in);
-        Scanner inputwhy = new Scanner(System.in);
-
-        String one = "A1";
-        String two = "B1";
-        String three = "C1";
-        String four = "A2";
-        String five = "B2";
-        String six = "C2";
-        String seven = "A3";
-        String eight = "B3";
-        String nine = "C3";
+        int player = 1;
+        char[] lucifers = {'|', '|', '|', '|', '|', '|', '|', '|', '|', '|', '|', '|', '|', '|', '|', '|', '|', '|', '|', '|', '|', '|', '|', '|'};
+        Scanner scanner = new Scanner(System.in);
 
 
-        for (int i = 0; i < 9; i++) {
-
-            boolean diagonaal1 = ();
 
 
-            int speler = 1;
-            if (diagonaal1 == true){
-                System.out.println("We hebben een winnaar!");
+
+        int totaal = 24;
+        char lijn = '|';
+        boolean i = false;
+        while (!i) {
+            if (totaal == 0) {
+                i = true;
+                System.out.println("Gefeliciteerd! Speler X heeft gewonnen!" + player);
+            } else {
+
+                if (player == 1) {
+                    System.out.println(totaal);
+                    System.out.println("Speler 1, hoeveel lucifers haal je weg (1, 2 of 3)?");
+                    int invoer = scanner.nextInt();
+                    if (invoer == 1) {
+                        totaal = totaal - 1;
+                    } else if (invoer == 2) {
+                        totaal = totaal - 2;
+                    } else if (invoer == 3) {
+                        totaal = totaal - 3;
+                    } else {
+                        System.out.println("Kiezen tussen 1 - 3 dronken droppie. Nu is je beurt voorbij");
+                    }
+                    player = 2;
+                } else {
+                    System.out.println(totaal);
+                    System.out.println("Speler 2, hoeveel lucifers haal je weg (1, 2 of 3)?");
+                    int invoer = scanner.nextInt();
+                    if (invoer == 1) {
+                        totaal = totaal - 1;
+                    } else if (invoer == 2) {
+                        totaal = totaal - 2;
+                    } else if (invoer == 3) {
+                        totaal = totaal - 3;
+                    } else {
+                        System.out.println("Kiezen tussen 1 - 3 dronken droppie. Nu is je beurt voorbij");
+
+                        player = 1;
+                    }
+                }
             }
-            else if (speler == 1) {
-                System.out.println(one + " | " + two + " | " + three);
-                System.out.println("-----------");
-                System.out.println(four + " | " + five + " | " + six);
-                System.out.println("-----------");
-                System.out.println(seven + " | " + eight + " | " + nine);
-                System.out.println("Speler X is aan de beurt. Kies een locatie");
-                String input = inputx.next();
-                if (input.equals(one)) {
-                    one = "X";
-                } else if (input.equals(two)) {
-                    two = "X";
-                } else if (input.equals(three)) {
-                    three = "X";
-                } else if (input.equals(four)) {
-                    four = "X";
-                } else if (input.equals(five)) {
-                    five = "X";
-                } else if (input.equals(six)) {
-                    six = "X";
-                } else if (input.equals(seven)) {
-                    seven = "X";
-                } else if (input.equals(eight)) {
-                    eight = "X";
-                } else if (input.equals(nine)) {
-                    nine = "X";
-                } else {
-                    System.out.println("Voer een correcte locatie in");
-                }
-                speler = 2;
-            }else {
-                System.out.println(one + " | " + two + " | " + three);
-                System.out.println("---------");
-                System.out.println(four + " | " + five + " | " + six);
-                System.out.println("---------");
-                System.out.println(seven + " | " + eight + " | " + nine);
-
-                System.out.println("Speler Y is aan de beurt. Kies een locatie");
-                String inputy = inputwhy.nextLine();
-                if (inputy.equals(one)) {
-                    one = "Y";
-                } else if (inputy.equals(two)) {
-                    two = "Y";
-                } else if (inputy.equals(three)) {
-                    three = "Y";
-                } else if (inputy.equals(four)) {
-                    four = "Y";
-                } else if (inputy.equals(five)) {
-                    five = "Y";
-                } else if (inputy.equals(six)) {
-                    six = "Y";
-                } else if (inputy.equals(seven)) {
-                    seven = "Y";
-                } else if (inputy.equals(eight)) {
-                    eight = "Y";
-                } else if (inputy.equals(nine)) {
-                    nine = "Y";
-                } else {
-                    System.out.println("Voer een correcte locatie in");
-                }
-                speler = 1;
+            for (int j = 0; j < totaal; j++){
+                System.out.print("| ");
             }
         }
-
-
     }
-
 }
+
