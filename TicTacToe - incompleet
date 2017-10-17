@@ -1,11 +1,15 @@
 import java.util.Scanner;
+import java.lang.String;
 
 
 
-public class tictactoe {
+public class tictac {
 
 
-    public void main(String[] args) { new tictactoe().run();}
+    public static void main(String[] args) {
+        new tictac().run();
+    }
+
 
 
     public void run() {
@@ -18,7 +22,7 @@ public class tictactoe {
         Scanner inputx = new Scanner(System.in);
         Scanner inputwhy = new Scanner(System.in);
 
-        int one = 1;
+        String one = "A1";
         String two = "B1";
         String three = "C1";
         String four = "A2";
@@ -31,64 +35,74 @@ public class tictactoe {
 
         for (int i = 0; i < 9; i++) {
 
-            System.out.println(one + " | " + two + " | " + three);
-            System.out.println("-----------");
-            System.out.println(four + " | " + five + " | " + six);
-            System.out.println("-----------");
-            System.out.println(seven + " | " + eight + " | " + nine);
+            boolean diagonaal1 = ();
 
-            System.out.println("Speler X is aan de beurt. Kies een locatie");
-            int input = inputx.nextInt();
-            if (input == one) {
-                String s = Integer.toString(one);
-                one = str;
-            } else if (input == two){
-                two = "X";
-            }else if (input == three){
-                three = "X";
-            }else if (input == four){
-                four = "X";
-            }else if (input == five){
-                five = "X";
-            }else if (input == six){
-                six = "X";
-            }else if (input == seven){
-                seven = "X";
-            }else if (input == eight){
-                eight = "X";
-            }else if (input == nine){
-                nine = "X";
-            }else {
-                System.out.println("Voer een correcte locatie in");
+
+            int speler = 1;
+            if (diagonaal1 == true){
+                System.out.println("We hebben een winnaar!");
             }
-            System.out.println(one + " | " + two + " | " + three);
-            System.out.println("---------");
-            System.out.println(four + " | " + five + " | " + six);
-            System.out.println("---------");
-            System.out.println(seven + " | " + eight + " | " + nine);
-
-            System.out.println("Speler Y is aan de beurt. Kies een locatie");
-            String inputy = inputwhy.nextLine();
-            if (inputy == one) {
-                one = "Y";
-            } else if (input == two){
-                two = "Y";
-            }else if (input == three){
-                three = "Y";
-            }else if (input == four){
-                four = "Y";
-            }else if (input == five){
-                five = "Y";
-            }else if (input == six){
-                six = "Y";
-            }else if (input == seven){
-                seven = "Y";
-            }else if (input == eight){
-                eight = "Y";
-            }else if (input == nine){
-                nine = "Y";
+            else if (speler == 1) {
+                System.out.println(one + " | " + two + " | " + three);
+                System.out.println("-----------");
+                System.out.println(four + " | " + five + " | " + six);
+                System.out.println("-----------");
+                System.out.println(seven + " | " + eight + " | " + nine);
+                System.out.println("Speler X is aan de beurt. Kies een locatie");
+                String input = inputx.next();
+                if (input.equals(one)) {
+                    one = "X";
+                } else if (input.equals(two)) {
+                    two = "X";
+                } else if (input.equals(three)) {
+                    three = "X";
+                } else if (input.equals(four)) {
+                    four = "X";
+                } else if (input.equals(five)) {
+                    five = "X";
+                } else if (input.equals(six)) {
+                    six = "X";
+                } else if (input.equals(seven)) {
+                    seven = "X";
+                } else if (input.equals(eight)) {
+                    eight = "X";
+                } else if (input.equals(nine)) {
+                    nine = "X";
+                } else {
+                    System.out.println("Voer een correcte locatie in");
+                }
+                speler = 2;
             }else {
-                System.out.println("Voer een correcte locatie in");
+                System.out.println(one + " | " + two + " | " + three);
+                System.out.println("---------");
+                System.out.println(four + " | " + five + " | " + six);
+                System.out.println("---------");
+                System.out.println(seven + " | " + eight + " | " + nine);
+
+                System.out.println("Speler Y is aan de beurt. Kies een locatie");
+                String inputy = inputwhy.nextLine();
+                if (inputy.equals(one)) {
+                    one = "Y";
+                } else if (inputy.equals(two)) {
+                    two = "Y";
+                } else if (inputy.equals(three)) {
+                    three = "Y";
+                } else if (inputy.equals(four)) {
+                    four = "Y";
+                } else if (inputy.equals(five)) {
+                    five = "Y";
+                } else if (inputy.equals(six)) {
+                    six = "Y";
+                } else if (inputy.equals(seven)) {
+                    seven = "Y";
+                } else if (inputy.equals(eight)) {
+                    eight = "Y";
+                } else if (inputy.equals(nine)) {
+                    nine = "Y";
+                } else {
+                    System.out.println("Voer een correcte locatie in");
+                }
+                speler = 1;
             }
         }
 
