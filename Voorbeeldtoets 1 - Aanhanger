@@ -1,0 +1,43 @@
+public class aanhanger {
+
+    public static void main(String[] args) {
+        new aanhanger().run();
+    }
+
+    public void run() {
+    
+    menu();
+    keuze();
+    kleineaanhanger();
+    groteaanhanger();
+    overzicht();
+    afsluiten();
+    
+    }
+    
+    public void menu(){
+    Scanner input = new Scanner(System.in);
+    boolean stoppen = false;
+    While(!stoppen) {
+    int input = scanner.nextInt();
+    System.out.println("*******************************");
+    System.out.println("* De Trekhaak");
+    System.out.println("*******************************");
+    System.out.println("* 1) Kleine aanhanger");
+    System.out.println("* 2) Grote aanhanger");
+    System.out.println("* 3) Overzicht");
+    System.out.println("* 4) Afsluiten");
+    
+    if (input == 1) {
+    kleineaanhanger();
+    } else if (input == 2) {
+    groteaanhanger();
+    } else if (input == 3) {
+    overzicht();
+    } else if (input == 4) {
+    afsluiten();
+    }
+    
+    }
+    }
+    
