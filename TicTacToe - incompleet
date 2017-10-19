@@ -35,11 +35,9 @@ public class tictac {
 
         for (int i = 0; i < 9; i++) {
 
-            boolean diagonaal1 = ();
-
 
             int speler = 1;
-            if (diagonaal1 == true){
+            if ((one.equals("X")) && (one.equals(two)) && (two.equals(three))){
                 System.out.println("We hebben een winnaar!");
             }
             else if (speler == 1) {
