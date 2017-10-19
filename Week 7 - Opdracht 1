@@ -1,5 +1,9 @@
 //Belastingberekener
 
+/*
+belasting[i] = berekenbelasting(i+1)
+*/
+
 import java.util.Scanner;
 
 public class opdracht1 {
